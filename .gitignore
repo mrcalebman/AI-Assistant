@@ -1,0 +1,7 @@
+.DS_Store
+
+# Credential files (add specific filenames here as needed)
+*.env
+.env.*
+credentials.*
+secrets.*
