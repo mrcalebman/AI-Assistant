@@ -1,0 +1,39 @@
+{
+  "projects": {
+    "Johnson Kitchen": {
+      "completed": "2026-03-01",
+      "trades": ["tile", "paint", "caulk"],
+      "callbacks": [
+        {
+          "date": "2026-03-10",
+          "issue": "caulk failure around tub",
+          "fix": "re-caulked",
+          "resolved": true
+        },
+        {
+          "date": "2026-04-22",
+          "issue": "grout cracking at floor transition",
+          "fix": "re-grouted",
+          "resolved": true
+        }
+      ]
+    },
+    "Martinez Bathroom": {
+      "completed": "2026-04-15",
+      "trades": ["tile", "caulk"],
+      "callbacks": []
+    },
+    "Williams Master Bath": {
+      "completed": "2026-05-20",
+      "trades": ["tile", "paint"],
+      "callbacks": [
+        {
+          "date": "2026-06-03",
+          "issue": "paint peeling near shower",
+          "fix": null,
+          "resolved": false
+        }
+      ]
+    }
+  }
+}
