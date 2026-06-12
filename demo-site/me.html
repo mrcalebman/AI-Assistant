@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caleb Alexandre Nelson — Project Manager & Lead Carpenter</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #fbfbfd;
+    --surface: #ffffff;
+    --border: #e5e5ea;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #0071e3;
+    --accent-light: #e8f0fc;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(251,251,253,0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding: 0 2rem;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .brand { font-weight: 700; font-size: 0.95rem; color: var(--text); text-decoration: none; }
+  nav ul { list-style: none; display: flex; gap: 2rem; }
+  nav a { text-decoration: none; color: var(--muted); font-size: 0.875rem; transition: color 0.15s; }
+  nav a:hover { color: var(--accent); }
+  nav .back { font-size: 0.8rem; color: var(--accent); text-decoration: none; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+    padding: 6rem 2rem 4rem;
+    max-width: 900px; margin: 0 auto;
+  }
+  .hero .eyebrow {
+    font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 1.5rem; font-weight: 600;
+  }
+  .hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 700; letter-spacing: -0.03em; line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 .word { display: inline-block; opacity: 0; }
+  .hero .positioning {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--muted); max-width: 55ch; line-height: 1.7;
+  }
+
+  /* SECTIONS */
+  section { padding: 5rem 2rem; max-width: 900px; margin: 0 auto; }
+  section h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 700; letter-spacing: -0.02em;
+    margin-bottom: 2.5rem;
+  }
+
+  /* WAYS TO WORK */
+  .ways-row {
+    border-top: 1px solid var(--border);
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .ways-row:last-child { border-bottom: 1px solid var(--border); }
+  .ways-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.4rem 0;
+  }
+  .ways-header .label {
+    font-size: 1.05rem; font-weight: 600;
+  }
+  .ways-header .chevron {
+    font-size: 1.2rem; color: var(--accent); transition: transform 0.3s;
+    line-height: 1;
+  }
+  .ways-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  .ways-panel-inner {
+    padding: 0 0 1.5rem;
+    font-size: 0.95rem; color: var(--muted); line-height: 1.7;
+    border-radius: 12px;
+  }
+  .ways-row.open .chevron { transform: rotate(45deg); }
+  .ways-row.open .ways-panel { max-height: 200px; }
+
+  /* PANEL COLORS */
+  .ways-row:nth-child(1) .ways-panel-inner { border-left: 3px solid #0071e3; padding-left: 1rem; }
+  .ways-row:nth-child(2) .ways-panel-inner { border-left: 3px solid #34c759; padding-left: 1rem; }
+  .ways-row:nth-child(3) .ways-panel-inner { border-left: 3px solid #ff9f0a; padding-left: 1rem; }
+  .ways-row:nth-child(4) .ways-panel-inner { border-left: 3px solid #bf5af2; padding-left: 1rem; }
+
+  /* ABOUT */
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;
+  }
+  .about-bio { font-size: 1rem; color: var(--muted); line-height: 1.8; }
+  .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
+  .tag {
+    background: var(--accent-light); color: var(--accent);
+    border-radius: 999px; padding: 0.3rem 0.9rem;
+    font-size: 0.8rem; font-weight: 500;
+  }
+
+  /* STATS */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    background: var(--text);
+    border-radius: 20px;
+    padding: 3rem 2.5rem;
+    color: white;
+  }
+  .stat-item { text-align: center; }
+  .stat-number {
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -0.03em;
+    color: white; line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.8rem; color: rgba(255,255,255,0.55);
+    margin-top: 0.4rem; text-transform: uppercase; letter-spacing: 0.08em;
+  }
+
+  /* BUILT */
+  .built-cards {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+  }
+  .built-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.75rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .built-card:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+  }
+  .built-card .icon { font-size: 2rem; margin-bottom: 0.75rem; }
+  .built-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; }
+  .built-card p { font-size: 0.875rem; color: var(--muted); line-height: 1.5; }
+
+  /* CONTACT */
+  .contact-section {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #0071e3 0%, #0055b3 100%);
+    color: white;
+  }
+  .contact-section h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700; letter-spacing: -0.02em;
+    margin-bottom: 1rem; color: white;
+  }
+  .contact-section p {
+    color: rgba(255,255,255,0.7); margin-bottom: 2rem; font-size: 1.05rem;
+  }
+  .contact-btn {
+    display: inline-block;
+    background: white; color: #0071e3;
+    font-weight: 700; font-size: 1rem;
+    padding: 0.9rem 2.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .contact-btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  }
+
+  /* REVEAL CLASSES */
+  .reveal { opacity: 0; transform: translateY(32px); }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* MOBILE */
+  @media (max-width: 600px) {
+    nav ul { display: none; }
+    .about-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .stats { padding: 2rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="index.html">CAN</a>
+  <ul>
+    <li><a href="#work">Work With Me</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#built">Built</a></li>
+  </ul>
+  <a class="back" href="index.html">← Home</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="eyebrow">Project Manager · Lead Carpenter · RHR</div>
+  <h1 id="headline"></h1>
+  <p class="positioning">
+    I lead the build side of Redemption Home Remodeling — turning fully-designed
+    $30k–$100k+ residential projects into finished homes. I run the crew,
+    manage the subs, hold the quality bar, and make sure every project
+    closes on time with zero callbacks.
+  </p>
+</div>
+
+<!-- WAYS TO WORK -->
+<section id="work">
+  <h2 class="reveal">Ways to work with me.</h2>
+  <div id="ways">
+    <div class="ways-row">
+      <div class="ways-header">
+        <span class="label">Field Operations Leadership</span>
+        <span class="chevron">+</span>
+      </div>
+      <div class="ways-panel">
+        <div class="ways-panel-inner">
+          I own the build phase from design handoff to final walkthrough — coordinating carpenters, painters, plumbers, electricians, and drywall crews to keep projects on schedule. If your job site needs someone who can lead a crew, hit deadlines, and not call you with problems, that's the role I was built for.
+        </div>
+      </div>
+    </div>
+    <div class="ways-row">
+      <div class="ways-header">
+        <span class="label">Quality Systems & Callbacks</span>
+        <span class="chevron">+</span>
+      </div>
+      <div class="ways-panel">
+        <div class="ways-panel-inner">
+          My active focus is driving RHR's operational success rate from 60% to 80% — defined as on-schedule delivery with zero callbacks in the first four weeks. I'm building the inspection cadence, checklists, and crew standards to make that the norm, not the exception.
+        </div>
+      </div>
+    </div>
+    <div class="ways-row">
+      <div class="ways-header">
+        <span class="label">Carpentry & Craft</span>
+        <span class="chevron">+</span>
+      </div>
+      <div class="ways-panel">
+        <div class="ways-panel-inner">
+          Five years running my own contracting and carpentry business before joining RHR. I'm the lead carpenter on site and the person who sets the standard that Josh and Josh Jackson are trained against. High-end finish work, full home remodels, kitchens, bathrooms.
+        </div>
+      </div>
+    </div>
+    <div class="ways-row">
+      <div class="ways-header">
+        <span class="label">Team Development</span>
+        <span class="chevron">+</span>
+      </div>
+      <div class="ways-panel">
+        <div class="ways-panel-inner">
+          I've trained both field workers from the ground up and I'm actively building them into craftsmen who can hold a quality standard without constant supervision. If you're scaling a trades team and need someone who can build skills, not just manage tasks, that's what I do.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="reveal">About.</h2>
+  <div class="about-grid">
+    <div>
+      <p class="about-bio reveal">
+        I'm Caleb Alexandre Nelson — a builder in the full sense of the word. I have a business degree and spent five years running my own contracting operation before joining Redemption Home Remodeling at the start of 2026. At RHR, I'm the bridge between what was designed on paper and what gets built in the field: managing the schedule, leading the crew, running the subs, and holding every project to a quality standard that earns referrals instead of callbacks.
+      </p>
+      <p class="about-bio reveal" style="margin-top:1rem;">
+        Outside of work, I'm a husband and a deacon and leader in my church community. I believe the same principles that make a good building — strong foundation, careful execution, no shortcuts — make everything else worth doing.
+      </p>
+      <div class="tags reveal" style="margin-top:1.5rem;">
+        <span class="tag">Project Management</span>
+        <span class="tag">Carpentry</span>
+        <span class="tag">Team Leadership</span>
+        <span class="tag">Subcontractor Management</span>
+        <span class="tag">Quality Systems</span>
+        <span class="tag">Residential Remodel</span>
+        <span class="tag">4DX</span>
+        <span class="tag">Design-Build</span>
+      </div>
+    </div>
+    <div>
+      <div class="stats reveal">
+        <div class="stat-item">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Years Running Own Business</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">$100k+</div>
+          <div class="stat-label">Typical Project Size</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">80%</div>
+          <div class="stat-label">Operational Success Target</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2026</div>
+          <div class="stat-label">WIG Deadline</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUILT -->
+<section id="built">
+  <h2 class="reveal">What I've built.</h2>
+  <div class="built-cards">
+    <div class="built-card reveal">
+      <div class="icon">🏠</div>
+      <h3>240 E Ross St, Lancaster PA</h3>
+      <p>Full residential remodel in progress. Currently in the painting stage. Target close: July 1, 2026.</p>
+    </div>
+    <div class="built-card reveal">
+      <div class="icon">🔨</div>
+      <h3>Redemption Home Remodeling</h3>
+      <p>PM and Lead Carpenter for RHR's build pipeline — managing $30k–$100k+ projects from design handoff to final walkthrough.</p>
+    </div>
+    <div class="built-card reveal">
+      <div class="icon">📐</div>
+      <h3>Own Contracting Business</h3>
+      <p>Built and ran an independent contracting and carpentry operation for 5 years before joining RHR.</p>
+    </div>
+    <div class="built-card reveal">
+      <div class="icon">👷</div>
+      <h3>Field Team at RHR</h3>
+      <p>Hired, trained, and develop Josh Nelson and Josh Jackson — both carpenters trained under Caleb's standard from day one.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="contact-section">
+  <h2>Let's talk.</h2>
+  <p>Got a project that needs someone who shows up and finishes the job right.</p>
+  <a class="contact-btn" href="mailto:caleb.an97@gmail.com">caleb.an97@gmail.com</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Hero headline animation
+  const headline = "I build what other people only plan.";
+  const words = headline.split(' ');
+  const h1 = document.getElementById('headline');
+  h1.innerHTML = words.map(w => `<span class="word">${w}&nbsp;</span>`).join('');
+  gsap.to('.word', {
+    opacity: 1,
+    duration: 0.4,
+    stagger: 0.08,
+    ease: 'power2.out',
+    delay: 0.3
+  });
+
+  // ScrollTrigger reveals
+  gsap.utils.toArray('.reveal').forEach(el => {
+    gsap.fromTo(el,
+      { opacity: 0, y: 32 },
+      {
+        opacity: 1, y: 0, duration: 0.7, ease: 'power2.out',
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 85%',
+          toggleActions: 'play none none none'
+        }
+      }
+    );
+  });
+
+  // Accordion
+  document.querySelectorAll('.ways-row').forEach(row => {
+    row.addEventListener('click', () => {
+      const isOpen = row.classList.contains('open');
+      document.querySelectorAll('.ways-row.open').forEach(r => r.classList.remove('open'));
+      if (!isOpen) row.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>
