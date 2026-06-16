@@ -1,0 +1,35 @@
+name: Auto-merge session branch into main
+
+on:
+  push:
+    branches:
+      - 'claude/**'
+
+jobs:
+  merge-to-main:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge session branch into main
+        run: |
+          SESSION_BRANCH="${{ github.ref_name }}"
+          echo "Merging $SESSION_BRANCH into main"
+          git fetch origin "$SESSION_BRANCH"
+          git merge --no-ff "origin/$SESSION_BRANCH" -m "Auto-merge $SESSION_BRANCH into main" || {
+            echo "Merge conflict detected. Skipping auto-merge."
+            exit 0
+          }
+          git push origin main
