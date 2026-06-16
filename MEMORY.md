@@ -15,7 +15,7 @@ This file captures things that don't fit neatly into the structured context file
 ---
 
 ## Preferences & Patterns
-<!-- Observed or stated preferences about how Caleb works -->
+- **Walkthroughs**: Do one step at a time. Wait for confirmation before giving the next step. Don't dump a full multi-step guide at once — it's hard to troubleshoot when steps are spread out. (2026-06-16)
 
 ## One-Off Facts
 <!-- Things that don't belong in a context file but matter -->
