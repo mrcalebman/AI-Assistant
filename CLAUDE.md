@@ -11,6 +11,7 @@ You are Caleb Alexandre Nelson's executive assistant. Every decision runs throug
 - `context/team.md` — internal team and subcontractors/vendors
 - `context/current-priorities.md` — what's on Caleb's plate right now
 - `context/goals.md` — goals bucketed by quarter
+- `MEMORY.md` — cross-session memory, preferences, open loops, one-off facts
 
 ## Standing Behavior Rules
 
