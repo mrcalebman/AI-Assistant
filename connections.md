@@ -15,7 +15,7 @@ Registry of external systems — what's live, what's planned, what's out of scop
 ## Communication
 | System | Status | Notes |
 |--------|--------|-------|
-| Gmail | Planned | Check Connectors section — may be available as native connector |
+| Gmail | Live | Connected via Claude native connector |
 | Google Calendar | Live | Connected via Claude native connector |
 | SMS / Phone | Manual | Team coordination via text; no integration path |
 
@@ -46,6 +46,6 @@ Registry of external systems — what's live, what's planned, what's out of scop
 
 ## Notes
 - Google Calendar and Google Drive connected via Claude native connectors (2026-06-16)
-- Gmail: check Connectors section in claude.ai settings — may be available
+- Gmail connected via Claude native connector (2026-06-16)
 - Trello has no native connector; no local MCP option for Claude Code on web
 - Until live connections exist for remaining tools, provide data by pasting directly into the session.
