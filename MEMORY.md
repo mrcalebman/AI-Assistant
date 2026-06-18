@@ -18,7 +18,7 @@ This file captures things that don't fit neatly into the structured context file
 - **Walkthroughs**: Do one step at a time. Wait for confirmation before giving the next step. Don't dump a full multi-step guide at once — it's hard to troubleshoot when steps are spread out. (2026-06-16)
 
 ## One-Off Facts
-<!-- Things that don't belong in a context file but matter -->
+- **Paint sequencing**: Paint is best done with no other trade working on site. When scheduling, protect paint time from overlap. (2026-06-18)
 
 ## Open Loops
 <!-- Things Caleb mentioned but didn't resolve — follow up when relevant -->
