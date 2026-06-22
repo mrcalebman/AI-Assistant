@@ -34,6 +34,7 @@ These are synced snapshots. Re-read from Google Drive and update the local file 
 
 | Local File | Google Drive Source | Drive File ID | Sync Cadence |
 |---|---|---|---|
+| `references/2026-operations-scoreboard.md` | 2026 Operations Scoreboard (Sheets) | `1XIAtFq_jdZ6G65xIxfeiz3AnCbMP6XsY_oBZtIvcELs` | Every 2 weeks |
 | `references/pm-operations-manual.md` | Project Manager Operations Manual.docx | `1nf7WfqFFNz6CaKEApcCrJ9bt6eK_tglQ` | Every 2 weeks |
 | `references/employee-handbook.md` | RR \| Employee Handbook.docx | `1xv6eJbjfZV4CAL2xOw7Lub0ucYA-UFfz` | Every 2 weeks |
 
