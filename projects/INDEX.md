@@ -2,4 +2,4 @@
 
 One line per active project.
 
-- [240 E Ross St, Lancaster PA](240-e-ross-st/README.md) — Active remodel, painting stage, due July 1 2026
+- [240 E Ross St, Lancaster PA](240-e-ross-st/README.md) — Completed ~2026-06-22

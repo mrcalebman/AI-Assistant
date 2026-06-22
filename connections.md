@@ -15,14 +15,14 @@ Registry of external systems — what's live, what's planned, what's out of scop
 ## Communication
 | System | Status | Notes |
 |--------|--------|-------|
-| Gmail | Planned | Primary email; team and client communication |
-| Google Calendar | Planned | Scheduling, job timelines, deadlines |
+| Gmail | Live | Connected via Claude native connector |
+| Google Calendar | Live | Connected via Claude native connector |
 | SMS / Phone | Manual | Team coordination via text; no integration path |
 
 ## Project & Job Management
 | System | Status | Notes |
 |--------|--------|-------|
-| Trello | Planned | Job/task tracking |
+| Trello | Manual | No native Claude connector available; paste board data as needed |
 | Houzz Pro | Manual | Client-facing project management and leads; limited API access |
 
 ## Financials
@@ -33,7 +33,7 @@ Registry of external systems — what's live, what's planned, what's out of scop
 ## Storage & Documents
 | System | Status | Notes |
 |--------|--------|-------|
-| Google Drive | Planned | Documents, photos, job files |
+| Google Drive | Live | Connected via Claude native connector |
 
 ## Purchasing & Materials
 | System | Status | Notes |
@@ -45,5 +45,7 @@ Registry of external systems — what's live, what's planned, what's out of scop
 ---
 
 ## Notes
-- MCP integrations for Gmail, Google Calendar, Trello, and Google Drive are the highest-value connections to set up.
-- Until live connections exist, provide data by pasting emails, calendar exports, or Trello board screenshots directly into the session.
+- Google Calendar and Google Drive connected via Claude native connectors (2026-06-16)
+- Gmail connected via Claude native connector (2026-06-16)
+- Trello has no native connector; no local MCP option for Claude Code on web
+- Until live connections exist for remaining tools, provide data by pasting directly into the session.

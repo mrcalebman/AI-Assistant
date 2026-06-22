@@ -21,7 +21,7 @@ The video covers how to complete projects on schedule and without rework or call
 
 ## Why This Matters to Me
 - RHR's WIG is defined in part by zero callbacks in the first 4 weeks post-completion — this video's core argument maps directly to that goal
-- Caleb leads field workers (Josh Nelson, Josh Jackson) who are still building experience — a pre-closeout checklist is a practical tool for standardizing their quality inspections
+- Caleb leads field workers (Josh Nelson, Josh Sackson) who are still building experience — a pre-closeout checklist is a practical tool for standardizing their quality inspections
 - Operational success at RHR is currently 60%; the callback-prevention focus here is one of the levers to move it to 80%
 
 ## Action Items (video's suggestions)

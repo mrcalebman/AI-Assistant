@@ -4,7 +4,7 @@
 - Complete 240 E Ross St, Lancaster PA on schedule and without callbacks
 
 ## Q4 2026 (by December 31)
-- Hit WIG: raise operational success rate from 60% to 80%
+- Hit WIG: raise operational success rate from 65% to 80%
   - Defined as: on-schedule completion + zero callbacks in first 4 weeks post-completion
   - Methodology: 4DX
 

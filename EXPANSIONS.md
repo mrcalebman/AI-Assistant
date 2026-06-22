@@ -29,7 +29,7 @@ Growth roadmap for the assistant system. Reviewed and updated during `/audit`.
 | `/add-advisor` | Live | Build advisor profiles from public content |
 | `/ask-the-board` | Live | Multi-advisor deliberation framework |
 | `/ingest` | Live | YouTube video → knowledge base entry |
-| `/job-closeout` | Backlog | End-of-job checklist to prevent callbacks — pre-punch list, client walkthrough prompt, 4-week follow-up reminder |
+| `/job-closeout` | Live | End-of-job checklist to prevent callbacks — pre-punch list, client walkthrough prompt, 4-week follow-up reminder |
 | `/weekly-report` | Backlog | Pull job status, flag at-risk timelines, summarize week for Joel |
 | `/material-order` | Backlog | Draft material list from job scope; format for Home Depot / Lowe's / Amazon |
 | `/sub-brief` | Backlog | Generate subcontractor briefing from job notes before a trade shows up |

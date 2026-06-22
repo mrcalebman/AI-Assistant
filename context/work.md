@@ -23,12 +23,12 @@ Residential design-and-build company. Focus on larger, higher-end remodels.
 - Projects finishing without callbacks (first 4 weeks post-completion)
 
 ## Strategic Priority — Wildly Important Goal (WIG)
-**Take operational success from 60% to 80% by end of 2026.**
+**Take operational success from 65% to 80% by end of 2026.**
 
 Methodology: 4DX (Four Disciplines of Execution)
 
 **Operational success is defined as:** a project is complete on schedule AND has zero callbacks in the first 4 weeks after completion. Both conditions must be met.
 
-Current baseline: 60%
+Current baseline: 65%
 Target: 80%
 Deadline: End of 2026

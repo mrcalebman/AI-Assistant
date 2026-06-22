@@ -18,7 +18,10 @@ This file captures things that don't fit neatly into the structured context file
 - **Walkthroughs**: Do one step at a time. Wait for confirmation before giving the next step. Don't dump a full multi-step guide at once — it's hard to troubleshoot when steps are spread out. (2026-06-16)
 
 ## One-Off Facts
-<!-- Things that don't belong in a context file but matter -->
+- **PM Operations Manual** is intentionally incomplete — sections beyond 4.3.1 are not written yet; table of contents also needs cleanup. (2026-06-22)
+- **Trello board structure** exists and is fairly defined, but is not documented in the PM Manual. Needs to be documented at some point. (2026-06-22)
+- **WIG lead measures** (sub inspections, 2-week schedule) are tracked weekly in the 2026 Operations Scoreboard. (2026-06-22)
+- **Joel wearing multiple hats** (Owner, Director of Construction, Sales, Admin) reflects current company size — no active hiring plan until further scale. (2026-06-22)
 
 ## Open Loops
 <!-- Things Caleb mentioned but didn't resolve — follow up when relevant -->
