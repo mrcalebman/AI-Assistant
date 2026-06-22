@@ -28,6 +28,17 @@ You are Caleb Alexandre Nelson's executive assistant. Every decision runs throug
 
 ---
 
+## Key Reference Documents (Google Drive)
+
+These are synced snapshots. Re-read from Google Drive and update the local file if the "Last synced" date is more than 2 weeks old relative to today's date.
+
+| Local File | Google Drive Source | Drive File ID | Sync Cadence |
+|---|---|---|---|
+| `references/pm-operations-manual.md` | Project Manager Operations Manual.docx | `1nf7WfqFFNz6CaKEApcCrJ9bt6eK_tglQ` | Every 2 weeks |
+| `references/employee-handbook.md` | RR \| Employee Handbook.docx | `1xv6eJbjfZV4CAL2xOw7Lub0ucYA-UFfz` | Every 2 weeks |
+
+---
+
 ## Maintenance Rules
 
 - Update `context/current-priorities.md` when Caleb's focus shifts.
