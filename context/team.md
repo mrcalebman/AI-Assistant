@@ -15,7 +15,7 @@
 - Loop in on: daily field work, job-site tasks, progress updates.
 - Email: joshn@redemptionhr.com | Phone: 407-785-9651
 
-**Josh Jackson** — Field Worker / Carpenter
+**Josh Sackson** — Field Worker / Carpenter
 - ~6 months of experience. Trained by Caleb.
 - Hired officially beginning of 2026.
 - Loop in on: daily field work, job-site tasks, progress updates.

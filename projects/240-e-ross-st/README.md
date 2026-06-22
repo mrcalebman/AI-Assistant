@@ -12,7 +12,7 @@ In progress — currently in the painting stage (as of 2026-06-12)
 ## Team on This Job
 - Caleb Nelson — PM / Lead Carpenter
 - Josh Nelson — Field
-- Josh Jackson — Field
+- Josh Sackson — Field
 - VZ Painting — current active trade
 
 ## Notes
