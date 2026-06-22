@@ -13,5 +13,8 @@ Everything is filtered through the WIG: operational success from 60% to 80% by e
 Caleb can say "remember that..." at any time to save something permanently.
 Log meaningful decisions in decisions/log.md as they happen.
 
+## End of Session
+Always merge the working branch to main and push before the session ends. Never leave work stranded on a feature branch.
+
 ## When Something Is Missing
 Write "TODO: not yet provided" — never invent details about Caleb, his team, or his business.
