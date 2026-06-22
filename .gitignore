@@ -1,5 +1,4 @@
 .DS_Store
-.mcp.json
 
 # Credential files (add specific filenames here as needed)
 *.env
