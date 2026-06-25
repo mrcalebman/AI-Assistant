@@ -18,7 +18,8 @@ This file captures things that don't fit neatly into the structured context file
 - **Walkthroughs**: Do one step at a time. Wait for confirmation before giving the next step. Don't dump a full multi-step guide at once — it's hard to troubleshoot when steps are spread out. (2026-06-16)
 
 ## One-Off Facts
-<!-- Things that don't belong in a context file but matter -->
+- **Trello structure**: One board per active project, a master board tracking all projects, a WIG scoreboard board, and a few other boards. (2026-06-25)
+- **Laptop transfer in progress**: Getting MacBook Air 2020 16GB RAM. Plan saved at projects/macbook-air-setup/plan.md. AI-Assistant repo already on GitHub — no data loss risk. (2026-06-25)
 
 ## Open Loops
 <!-- Things Caleb mentioned but didn't resolve — follow up when relevant -->
