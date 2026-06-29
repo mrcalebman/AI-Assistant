@@ -19,6 +19,7 @@ This file captures things that don't fit neatly into the structured context file
 
 ## One-Off Facts
 - **Trello structure**: One board per active project, a master board tracking all projects, a WIG scoreboard board, and a few other boards. (2026-06-25)
+- **Trello boards (favorited)**: 2784 Meadow Cross Way York PA, 437 S 5th St Oxford PA, 5971 Timothy Rd Harrisburg PA, 6221 Blue Bird Ave Harrisburg PA (active jobs); Job Board (master tracker); Weekly WIG Tasks/Commitments (WIG scoreboard); Caleb Workflow (not heavily used — inbox is primary daily to-do); Jeremy To Do (Jeremy @ JLR Mechanical); Josh To Do (both Joshs, not used often). (2026-06-29)
 - **Laptop transfer in progress**: Getting MacBook Air 2020 16GB RAM. Plan saved at projects/macbook-air-setup/plan.md. AI-Assistant repo already on GitHub — no data loss risk. (2026-06-25)
 
 ## Open Loops
