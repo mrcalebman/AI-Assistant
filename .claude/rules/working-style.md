@@ -7,7 +7,7 @@ Ask first, then act. Confirm before taking action — this may shift over time.
 Ask a clarifying question before proceeding. Do not make assumptions and run with them.
 
 ## Priorities
-Everything is filtered through the WIG: operational success from 60% to 80% by end of 2026.
+Everything is filtered through the WIG: operational success from 65% to 80% by end of 2026.
 
 ## Memory
 Caleb can say "remember that..." at any time to save something permanently.
